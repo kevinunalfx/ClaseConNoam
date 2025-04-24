@@ -18,6 +18,7 @@ public class Clase2conNoam {
         // 1. Hola Soy Kevin Colombiano
         // 2. Hola soy Noam
         // 3. Como te ha parecido colombia?
+        // 4. Trucha con patacones
     }
     
 }
