@@ -6,29 +6,41 @@
 package clase2connoam;
 
 import java.util.Scanner;
-/**
- *
- * @author MALAG
- */
+
+
+
 public class Clase2conNoam {
 
-    public static int factorial(int n){
-    if (n == 0 | n == 1){
-        return 1;
-    }
-    // Caso Recursivo  n! = n * (n-1)!
-    return n * factorial(n-1);
-    }
+    
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // 1. Hola Soy Kevin Colombiano
-        // 2. Hola soy Noam
-        // 3. Como te ha parecido colombia?
-        // 4. Trucha con patacones
-        System.out.println("Ingrese el numero: ");
-        int numero = sc.nextInt();
-        int resultado = factorial(numero);
-        System.out.println("Factorial de " + numero + " es: " + resultado);
+        
+        // Datos
+        String nombre = "Kevin Malagon Leal";
+        int edadprimitivo = 25;
+        String carrera = "Ingeniería en Sistemas y Computacion, Universidad Nacional de Colombia";
+        long telefonoprimitivo = 3212843253L;
+
+        // Conversión de primitivos a objetos
+        Integer edadObjeto = Integer.valueOf(edadprimitivo);    
+        Long telefonoObjeto = Long.valueOf(telefonoprimitivo);
+
+        // También usando parseo si vienen en String
+        String edadtexto = "25";
+        Integer edadDesdeTexto = Integer.parseInt(edadtexto);
+
+        String telefonotexto = "3212843253";
+        Long telefonoDesdeTexto = Long.parseLong(telefonotexto);
+
+        // Mostrar resultados
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad (Objeto Integer): " + edadObjeto);
+        System.out.println("Carrera: " + carrera);
+        System.out.println("Teléfono (Objeto Long): " + telefonoObjeto);
+
+        System.out.println("\nConversión desde texto:");
+        System.out.println("Edad (desde texto): " + edadDesdeTexto);
+        System.out.println("Teléfono (desde texto): " + telefonoDesdeTexto);
+    
     }
     
 }
